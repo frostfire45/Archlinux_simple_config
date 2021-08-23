@@ -1,5 +1,9 @@
 #!/bin/bash
 echo "============================================="
+echo "Loading Files For pacman"
+cat ./pacman.conf > /etc/pacman.conf
+cat ./mirrorlist > /etc/pacman.d/mirrorlist
+echo "============================================="
 echo "Setting Time"
 #$(timedatectl set-ntp true)
 
@@ -18,7 +22,7 @@ if [[ -z $(ip link | grep enp) ]]; then
     exit 1    
 else
     echo "Network is ready"
-    $(ping -c 1 archlinux.org)
+    ping -c 1 archlinux.org
     if [[ $? -eq 0 ]]; then
         echo 'Network is open'
         echo 'Sync Archlinx Repos'
@@ -34,7 +38,7 @@ echo "---------------------------------------------"
 echo "Checking for sda.fdisk file"
 if [[ -e ./sda.fdisk ]]; then
     echo 'Running sfdisk on sda.fdisk'
-    sfdisk /dev/sda < sda.fdisk
+    sfdisk /dev/sda < ./sda.fdisk
 else
     echo 'File does not exist'
     exit 1
