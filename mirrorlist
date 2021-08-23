@@ -1,0 +1,155 @@
+## United States
+
+Server = http://mirror.arizona.edu/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.dal10.us.leaseweb.net/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.stephen304.com/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.metrocast.net/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.kaminski.io/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirrors.gigenet.com/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://ord.mirror.rackspace.com/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.cs.pitt.edu/archlinux/$repo/os/$arch
+## United States
+
+Server = http://archmirror1.octyl.net/$repo/os/$arch
+## United States
+
+Server = http://mirrors.liquidweb.com/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirrors.rutgers.edu/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.umd.edu/archlinux/$repo/os/$arch
+## United States
+
+Server = http://www.gtlib.gatech.edu/pub/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.siena.edu/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://ftp.osuosl.org/pub/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://repo.ialab.dsu.edu/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.es.its.nyu.edu/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://reflector.luehm.com/arch/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.math.princeton.edu/pub/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.cc.columbia.edu/pub/linux/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://archlinux.surlyjake.com/archlinux/$repo/os/$arch
+## United States
+
+Server = http://dfw.mirror.rackspace.com/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.dc02.hackingand.coffee/arch/$repo/os/$arch
+## United States
+
+Server = http://mirrors.advancedhosters.com/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.vtti.vt.edu/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirrors.acm.wpi.edu/archlinux/$repo/os/$arch
+## United States
+
+Server = http://arch.mirror.constant.com/$repo/os/$arch
+## United States
+
+Server = http://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://arlm.tyzoid.com/$repo/os/$arch
+
+## United States
+
+Server = http://mirrors.kernel.org/archlinux/$repo/os/$arch
+## United States
+
+Server = http://arch.mirror.square-r00t.net/$repo/os/$arch
+## United States
+
+Server = http://mirrors.rit.edu/archlinux/$repo/os/$arch
+## United States
+
+Server = http://archbtw.linuxpride.com/$repo/os/$arch
+## United States
+
+Server = http://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirrors.sonic.net/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://arch.mirrors.pair.com/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.lty.me/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.pit.teraswitch.com/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://distro.ibiblio.org/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirror.cs.vt.edu/pub/ArchLinux/$repo/os/$arch
+## United States
+
+Server = http://mirrors.xtom.com/archlinux/$repo/os/$arch
+
+## United States
+
+Server = http://mirror.mia11.us.leaseweb.net/archlinux/$repo/os/$arch
+## United States
+
+Server = http://mirrors.xmission.com/archlinux/$repo/os/$arch
