@@ -97,5 +97,6 @@ arch-chroot /mnt locale-gen
 arch-chroot /mnt echo 'LANG=en_US.UTF-8' >> /etc/locale.conf
 echo '---------------------------------------------'
 echo 'Installing Bootloader'
-arch-chroot /mnt grub-install --target=i386-pc /dev/sda
+arch-chroot /mnt pacman -S grub
+grub-install --target=i386-pc --boot-directory=/mnt/boot/ /dev/sda
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
