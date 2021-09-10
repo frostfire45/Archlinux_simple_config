@@ -3,7 +3,7 @@ local=$(pwd)
 echo "============================================="
 echo "Loading Files For pacman"
 #cat "$local"/pacman.conf > /etc/pacman.conf
-#cat ./mirrorlist > /etc/pacman.d/mirrorlist
+cat $local/mirrorlist > /etc/pacman.d/mirrorlist
 echo "============================================="
 echo "Setting Time"
 #$(timedatectl set-ntp true)
