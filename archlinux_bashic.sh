@@ -28,6 +28,7 @@ else
         echo 'Network is open'
         echo 'Sync Archlinx Repos'
 	pacman -Sy
+	pacman -S unzip
     else
         echo 'Network Issues'
         echo 'Stopping Installer'
@@ -66,21 +67,25 @@ genfstab -U /mnt >> /mnt/etc/fstab
 echo "---------------------------------------------"
 echo "Inserting Networking Config File"
 networkDir='/etc/systemd/network/'
-if [[ -d $networkDir]]; then
-    cat ./networking.config > /etc/systemd/network/20-wired.network
+if [[ -d $networkDir ]] ; then
+    cat $local/networking.config > /etc/systemd/network/20-wired.network
 else
     echo 'Error occured directory does not exsists'
 fi
 echo "---------------------------------------------"
 echo "Inserting Networking Config File"
-gunzip Linux_terminal_color.zip
-cp ./bash.bashrc /mnt/etc/bash.bashrc
-if [[ $(sha256sum -t ./.bash.bashrc ) != $(sha256sum -t /mnt/etc/bash.bashrc) ]]; then
+unzip $local/Linux_terminal_color.zip
+cp $local/bash.bashrc /mnt/etc/bash.bashrc
+comp1=$(cat $local/bash.bashrc | sha256sum )
+comp2=$(cat /mnt/etc/bash.bashrc | sha256sum )
+if [[ $comp1  != $comp2 ]] ; then
     echo "bash.bashrc File BAD"
     exit 1
 fi
-cp ./DIR_COLORS /mnt/etc/
-if [[ $(sha256sum -t ./DIR_COLORS ) != $(sha256sum -t /mnt/etc/DIR_COLORS) ]]; then
+cp $local/DIR_COLORS /mnt/etc/
+comp1=$(cat $local/DIR_COLORS | sha256sum)
+comp2=$(cat /mnt/etc/DIR_COLORS | sha256sum)
+if [[ $comp1 != $comp2 ]] ; then
     echo "DIR_COLOR File BAD"
     exit 1
 fi
