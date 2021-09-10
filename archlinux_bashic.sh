@@ -1,8 +1,9 @@
 #!/bin/bash
+local=$(pwd)
 echo "============================================="
 echo "Loading Files For pacman"
-cat ./pacman.conf > /etc/pacman.conf
-cat ./mirrorlist > /etc/pacman.d/mirrorlist
+#cat "$local"/pacman.conf > /etc/pacman.conf
+#cat ./mirrorlist > /etc/pacman.d/mirrorlist
 echo "============================================="
 echo "Setting Time"
 #$(timedatectl set-ntp true)
@@ -26,7 +27,7 @@ else
     if [[ $? -eq 0 ]]; then
         echo 'Network is open'
         echo 'Sync Archlinx Repos'
-        $(pacman -Sy)
+	pacman -Sy
     else
         echo 'Network Issues'
         echo 'Stopping Installer'
@@ -36,7 +37,7 @@ fi
 echo "---------------------------------------------"
 
 echo "Checking for sda.fdisk file"
-if [[ -e ./sda.fdisk ]]; then
+if [[ -e $local/sda.fdisk50 ]]; then
     echo 'Running sfdisk on sda.fdisk'
     sfdisk /dev/sda < ./sda.fdisk
 else
