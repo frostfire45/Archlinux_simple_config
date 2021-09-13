@@ -27,8 +27,8 @@ else
     if [[ $? -eq 0 ]]; then
         echo 'Network is open'
         echo 'Sync Archlinx Repos'
-	pacman -Sy
-	pacman -S unzip
+	pacman -Sy --noconfirm 
+	pacman -S --noconfirm unzip
     else
         echo 'Network Issues'
         echo 'Stopping Installer'
@@ -97,6 +97,6 @@ arch-chroot /mnt locale-gen
 arch-chroot /mnt echo 'LANG=en_US.UTF-8' >> /etc/locale.conf
 echo '---------------------------------------------'
 echo 'Installing Bootloader'
-arch-chroot /mnt pacman -S grub
+arch-chroot /mnt pacman -S --noconfirm grub
 grub-install --target=i386-pc --boot-directory=/mnt/boot/ /dev/sda
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
